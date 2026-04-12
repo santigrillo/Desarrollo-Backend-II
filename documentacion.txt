@@ -1,3 +1,7 @@
-ubuntu
+Instalar Dotnet
+
 sudo apt-get update && \
   sudo apt-get install -y dotnet-sdk-10.0
+
+Crear aplicación.
+F1 -> New Project -> Buscar: .NET New Project  -> Buscar Blazor Web App -> Elegir directorio -> Elegir archivo .sln
