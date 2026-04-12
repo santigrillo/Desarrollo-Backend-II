@@ -2,8 +2,11 @@ Instalar Dotnet - Ubuntu
 sudo apt-get update && \
   sudo apt-get install -y dotnet-sdk-10.0
 
-Crear aplicación.
-F1 -> New Project -> Buscar: .NET New Project  -> Buscar Blazor Web App -> Elegir directorio -> Elegir archivo .sln
-
 Página.
 https://learn.microsoft.com/en-us/training/modules/build-web-api-aspnet-core/?WT.mc_id=dotnet-35129-website
+
+Crear aplicación.
+mkdir Carpeta -> cd Carpeta -> dotnet new webapi -controllers -f net10.0
+
+Correr. 
+dotnet run
