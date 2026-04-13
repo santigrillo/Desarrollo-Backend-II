@@ -4,9 +4,10 @@ sudo apt-get update && \
 
 Página.
 https://learn.microsoft.com/en-us/training/modules/build-web-api-aspnet-core/?WT.mc_id=dotnet-35129-website
+https://learn.microsoft.com/es-es/training/modules/build-web-api-aspnet-core/3-exercise-create-web-api (Español)
 
 Crear aplicación.
-mkdir Carpeta -> cd Carpeta -> dotnet new webapi -controllers -f net10.0
+mkdir Carpeta -> cd Carpeta -> dotnet new webapi -controllers -f net10.0 (o versión)
 
 Correr. 
 dotnet run
