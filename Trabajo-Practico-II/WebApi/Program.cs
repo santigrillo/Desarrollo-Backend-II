@@ -1,23 +1,40 @@
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-
-builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
-
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.MapOpenApi();
-}
+// 1. Método GET a la raiz. ("/")
+app.MapGet("/", () => 
+{  
+    // HTML 
+    string formularioHTML = @"
+        <!DOCTYPE html>
+        <html lang='es'>
+        <head>
+            <meta charset='UTF-8'>
+            <title>Formulario GET</title>
+        </head>
+        <body>
+            <h2>Formulario de prueba</h2>
+            
+            <form action='/procesar' method='POST'> 
+                <label for='nombre'>Nombre:</label>
+                <input type='text' id='nombre' name='nombre'>
+                
+                <label for='correo'>Correo:</label>
+                <input type='text' id='correo' name='correo'>
+                <br>    
+            
+                <button type='submit'>Enviar Datos</button>
+            </form>
+        </body>
+        </html>";
 
-app.UseHttpsRedirection();
+    return Results.Content(formularioHTML, "text/html");
+ 
+ });
 
-app.UseAuthorization();
-
-app.MapControllers();
+// 2. Método POST para procesar los datos.
+app.MapPost("/procesar", async (HttpRequest request) =>
+{ 
+});
 
 app.Run();

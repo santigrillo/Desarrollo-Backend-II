@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/santiagogrillo/Escritorio/Backend-II/Desarrollo-Backend-II/WebApi/WebApi.csproj": {}
+    "/home/santiagogrillo/Escritorio/Backend-II/Desarrollo-Backend-II/Trabajo-Practico-II/WebApi/WebApi.csproj": {}
   },
   "projects": {
-    "/home/santiagogrillo/Escritorio/Backend-II/Desarrollo-Backend-II/WebApi/WebApi.csproj": {
+    "/home/santiagogrillo/Escritorio/Backend-II/Desarrollo-Backend-II/Trabajo-Practico-II/WebApi/WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/santiagogrillo/Escritorio/Backend-II/Desarrollo-Backend-II/WebApi/WebApi.csproj",
+        "projectUniqueName": "/home/santiagogrillo/Escritorio/Backend-II/Desarrollo-Backend-II/Trabajo-Practico-II/WebApi/WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "/home/santiagogrillo/Escritorio/Backend-II/Desarrollo-Backend-II/WebApi/WebApi.csproj",
+        "projectPath": "/home/santiagogrillo/Escritorio/Backend-II/Desarrollo-Backend-II/Trabajo-Practico-II/WebApi/WebApi.csproj",
         "packagesPath": "/home/santiagogrillo/.nuget/packages/",
-        "outputPath": "/home/santiagogrillo/Escritorio/Backend-II/Desarrollo-Backend-II/WebApi/obj/",
+        "outputPath": "/home/santiagogrillo/Escritorio/Backend-II/Desarrollo-Backend-II/Trabajo-Practico-II/WebApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/santiagogrillo/.nuget/NuGet/NuGet.Config"
