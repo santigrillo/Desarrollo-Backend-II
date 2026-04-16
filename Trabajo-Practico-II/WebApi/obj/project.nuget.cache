@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "PvJP0d3x1jQ=",
+  "dgSpecHash": "U13R81pKusg=",
   "success": true,
-  "projectFilePath": "/home/santiagogrillo/Escritorio/Backend-II/Desarrollo-Backend-II/Trabajo-Practico-II/WebApi/WebApi.csproj",
+  "projectFilePath": "/home/santiago/Escritorio/BackendII/Desarrollo-Backend-II/Trabajo-Practico-II/WebApi/WebApi.csproj",
   "expectedPackageFiles": [
-    "/home/santiagogrillo/.nuget/packages/microsoft.aspnetcore.openapi/10.0.5/microsoft.aspnetcore.openapi.10.0.5.nupkg.sha512",
-    "/home/santiagogrillo/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512"
+    "/home/santiago/.nuget/packages/microsoft.aspnetcore.openapi/10.0.5/microsoft.aspnetcore.openapi.10.0.5.nupkg.sha512",
+    "/home/santiago/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512"
   ],
   "logs": []
 }

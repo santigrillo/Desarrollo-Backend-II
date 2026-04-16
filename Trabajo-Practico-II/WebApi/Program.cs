@@ -11,6 +11,42 @@ app.MapGet("/", () =>
         <head>
             <meta charset='UTF-8'>
             <title>Formulario GET</title>
+            <style>
+                element{
+                margin: 0;
+                }
+                body {
+                    font-family: Arial, sans-serif;
+                    height: 100vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 300px;
+                }
+                label {
+                    margin-top: 10px;
+                }
+                input {
+                    padding: 5px;
+                    margin-top: 5px;
+                    border-radius:3px;
+                    border: 1px solid black;
+                }
+                button {
+                    margin-top: 15px;
+                    padding: 10px;
+                    background-color: #4CAF50;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    border-radius:3px
+                }   
+            </style>
         </head>
         <body>
             <h2>Formulario de prueba</h2>
