@@ -1,0 +1,13 @@
+Objetivos
+En este práctico se pretende que el alumno reconozca los aspectos esenciales del patrón
+arquitectónico MVC en la plataforma .NET. Para esto el alumno deberá reconocer las capas
+de presentación, lógica de negocios y la capa de datos.
+Ejercicios
+    Con la documentación provista.
+    a.​ Investigue qué tipo de tecnologías ofrece .net core para desarrollar
+    webapps.
+    b.​ Utilizando .net MVC genere un proyecto que implemente la capa de
+    presentación, la lógica de negocio.
+    c.​ Agregue al proyecto la capa de datos y persista los datos en una base
+    de datos a su elección.
+    d.​ Realice una presentación con los conceptos abordados.
