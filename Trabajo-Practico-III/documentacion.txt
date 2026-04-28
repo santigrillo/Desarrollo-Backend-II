@@ -6,3 +6,61 @@ dotnet new mvc -o Proyecto.
 
 dotnet dev-certs https --trust
 
+2) Conectar a base de datos SQLite:
+
+a) Instalar paquetes necesarios:
+   - dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+   - dotnet add package Microsoft.EntityFrameworkCore.Tools
+
+b) Crear un modelo de datos (ejemplo: Models/Producto.cs):
+   namespace Proyecto_MVC.Models
+   {
+       public class Producto
+       {
+           public int Id { get; set; }
+           public string Nombre { get; set; }
+           public decimal Precio { get; set; }
+           public string Descripcion { get; set; }
+       }
+   }
+
+c) Crear el DbContext (Models/ApplicationDbContext.cs):
+   using Microsoft.EntityFrameworkCore;
+
+   namespace Proyecto_MVC.Models
+   {
+       public class ApplicationDbContext : DbContext
+       {
+           public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+               : base(options)
+           {
+           }
+
+           public DbSet<Producto> Productos { get; set; }
+       }
+   }
+
+d) Configurar la cadena de conexión en appsettings.json:
+   Agregar dentro del objeto JSON:
+   "ConnectionStrings": {
+     "DefaultConnection": "Data Source=app.db"
+   }
+
+e) Registrar el DbContext en Program.cs:
+   - Agregar using Microsoft.EntityFrameworkCore; y using Proyecto_MVC.Models;
+   - Después de builder.Services.AddControllersWithViews(); agregar:
+     builder.Services.AddDbContext<ApplicationDbContext>(options =>
+         options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+f) Crear la base de datos automáticamente al iniciar la aplicación:
+   - Antes de app.Run(); agregar:
+     using (var scope = app.Services.CreateScope())
+     {
+         var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+         dbContext.Database.EnsureCreated();
+     }
+
+g) Probar la aplicación:
+   - dotnet run --project Proyecto-MVC
+   - La aplicación creará la base de datos SQLite (app.db) y la tabla Productos automáticamente.
+
